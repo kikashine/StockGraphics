@@ -147,6 +147,9 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="AnalyzeServ_TemporaryKey.pfx" />
+    <None Include="bin\Debug\block_content_industry.ini" />
+    <None Include="bin\Debug\block_tree.ini" />
+    <None Include="bin\Debug\StockToolKit.Analyze.exe.config" />
     <None Include="packages.config" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
@@ -174,7 +177,15 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="bin\Debug\StockToolKit.Analyze.exe" />
+    <Content Include="bin\Debug\StockToolKit.Analyze.pdb" />
+    <Content Include="bin\Debug\x64\sqlite3.dll" />
+    <Content Include="bin\Debug\x86\sqlite3.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
